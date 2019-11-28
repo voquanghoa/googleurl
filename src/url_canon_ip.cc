@@ -170,7 +170,7 @@ CanonHostInfo::Family IPv4ComponentToNumber(
 
   // Use the 64-bit strtoi so we get a big number (no hex, decimal, or octal
   // number can overflow a 64-bit number in <= 16 characters).
-  uint64 num = _strtoui64(buf, NULL, BaseForType(base));
+  unsigned long num = _strtoui64(buf, NULL, BaseForType(base));
 
   // Check for 32-bit overflow.
   if (num > kuint32max)

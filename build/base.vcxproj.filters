@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\base\logging.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\base\basictypes.h" />
+    <ClInclude Include="..\base\logging.h" />
+    <ClInclude Include="..\base\scoped_ptr.h" />
+    <ClInclude Include="..\base\string16.h" />
+    <ClInclude Include="..\base\unicode\caniter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\casemap.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\char16ptr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\chariter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\choicfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\coleitr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\coll.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\compactdecimalformat.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\curramt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\currpinf.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\currunit.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\datefmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dbbi.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dcfmtsym.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\decimfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\docmain.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtfmtsym.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtintrv.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtitvfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtitvinf.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtptngen.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\dtrule.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\edits.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\enumset.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\errorcode.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\fieldpos.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\filteredbrk.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\fmtable.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\format.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\formattedvalue.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\fpositer.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\gender.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\gregocal.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\icudataver.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\icuplug.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\idna.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\listformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\localebuilder.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\localematcher.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\localpointer.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\locdspnm.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\locid.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\measfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\measunit.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\measure.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\messagepattern.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\msgfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\normalizer2.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\normlzr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\nounit.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\numberformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\numberrangeformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\numfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\numsys.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\parseerr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\parsepos.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\platform.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\plurfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\plurrule.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ptypes.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\putil.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\rbbi.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\rbnf.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\rbtz.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\regex.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\region.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\reldatefmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\rep.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\resbund.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\schriter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\scientificnumberformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\search.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\selfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\simpleformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\simpletz.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\smpdtfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\sortkey.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\std_string.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\strenum.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\stringoptions.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\stringpiece.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\stringtriebuilder.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\stsearch.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\symtable.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tblcoll.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\timezone.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tmunit.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tmutamt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tmutfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\translit.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tzfmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tznames.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tzrule.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\tztrans.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ubidi.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ubiditransform.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ubrk.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucal.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucasemap.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucat.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uchar.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucharstrie.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucharstriebuilder.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uchriter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uclean.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucnv.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucnv_cb.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucnv_err.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucnvsel.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucol.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucoleitr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uconfig.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucpmap.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucptrie.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucsdet.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ucurr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\udat.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\udata.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\udateintervalformat.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\udatpg.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\udisplaycontext.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uenum.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ufieldpositer.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uformattable.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uformattedvalue.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ugender.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uidna.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uiter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uldnames.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ulistformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uloc.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ulocdata.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\umachine.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\umisc.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\umsg.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\umutablecptrie.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unifilt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unifunct.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unimatch.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unirepl.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uniset.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unistr.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unorm.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unorm2.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unum.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unumberformatter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\unumsys.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uobject.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\upluralrules.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uregex.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uregion.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ureldatefmt.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\urename.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\urep.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ures.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uscript.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\usearch.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uset.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\usetiter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ushape.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uspoof.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\usprep.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ustdio.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ustream.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ustring.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\ustringtrie.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utext.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utf.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utf_old.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utf8.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utf16.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utf32.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utmscale.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utrace.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utrans.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\utypes.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uvernum.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\uversion.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\vtzone.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\alphaindex.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\appendable.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\basictz.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\brkiter.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\bytestream.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\bytestrie.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\bytestriebuilder.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\unicode\calendar.h">
+      <Filter>unicode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\base\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="unicode">
+      <UniqueIdentifier>{5c7bd572-e2b1-4186-8800-2d7f35448566}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

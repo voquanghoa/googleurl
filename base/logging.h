@@ -4,7 +4,6 @@
 #ifndef BASE_LOGGING_H__
 #define BASE_LOGGING_H__
 
-#include "jml/utils/exc_assert.h"
 
 struct EatShifts {
 
@@ -20,7 +19,7 @@ inline EatShifts eatShifts() { EatShifts result;  return result; }
 #define NOTREACHED() ExcAssert(false)
 #define DCHECK(x) ExcAssert((x)); eatShifts()
 
-#if 0
+#if 1
 
 #include <string>
 #include <cstring>

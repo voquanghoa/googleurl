@@ -39,6 +39,9 @@
 #include "googleurl/src/url_canon_internal.h"  // for _itoa_s
 
 #include "googleurl/base/logging.h"
+#include <googleurl\base\unicode\ucnv_err.h>
+#include <googleurl\base\unicode\ucnv_cb.h>
+#include <googleurl\base\unicode\uidna.h>
 
 namespace url_canon {
 
@@ -62,7 +65,7 @@ void appendURLEscapedChar(const void* context,
     const static char prefix[prefix_len + 1] = "%26%23";  // "&#" percent-escaped
     ucnv_cbFromUWriteBytes(from_args, prefix, prefix_len, 0, err);
 
-    DCHECK(code_point < 0x110000);
+
     char number[8];  // Max Unicode code point is 7 digits.
     _itoa_s(code_point, number, 10);
     int number_len = static_cast<int>(strlen(number));
@@ -106,7 +109,7 @@ ICUCharsetConverter::ICUCharsetConverter(UConverter* converter)
 ICUCharsetConverter::~ICUCharsetConverter() {
 }
 
-void ICUCharsetConverter::ConvertFromUTF16(const char16* input,
+void ICUCharsetConverter::ConvertFromUTF16(const UChar* input,
                                            int input_len,
                                            CanonOutput* output) {
   // Install our error handler. It will be called for character that can not
@@ -142,8 +145,10 @@ void ICUCharsetConverter::ConvertFromUTF16(const char16* input,
 // the length of the output will be set to the length of the new host name.
 //
 // On error, this will return false. The output in this case is undefined.
-bool IDNToASCII(const char16* src, int src_len, CanonOutputW* output) {
-  DCHECK(output->length() == 0);  // Output buffer is assumed empty.
+bool IDNToASCII(const UChar* src, int src_len, CanonOutputW* output) {
+	return false;
+	/*
+  //DCHECK(output->length() == 0);  // Output buffer is assumed empty.
   while (true) {
     // Use ALLOW_UNASSIGNED to be more tolerant of hostnames that violate
     // the spec (which do exist). This does not present any risk and is a
@@ -152,6 +157,7 @@ bool IDNToASCII(const char16* src, int src_len, CanonOutputW* output) {
     int num_converted = uidna_IDNToASCII(src, src_len, output->data(),
                                          output->capacity(),
                                          UIDNA_ALLOW_UNASSIGNED, NULL, &err);
+
     if (err == U_ZERO_ERROR) {
       output->set_length(num_converted);
       return true;
@@ -162,6 +168,7 @@ bool IDNToASCII(const char16* src, int src_len, CanonOutputW* output) {
     // Not enough room in our buffer, expand.
     output->Resize(output->capacity() * 2);
   }
+  */
 }
 
 bool ReadUTFChar(const char* str, int* begin, int length,

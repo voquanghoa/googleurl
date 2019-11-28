@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACAC8E18-F003-4881-9BA0-C7718AC5FFD5}</ProjectGuid>
+    <RootNamespace>base</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\common.props" />
+    <Import Project="$(SolutionDir)..\build\release.props" />
+    <Import Project="$(SolutionDir)../third_party/icu/build/using_icu.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)..\build\common.props" />
+    <Import Project="$(SolutionDir)..\build\debug.props" />
+    <Import Project="$(SolutionDir)../third_party/icu/build/using_icu.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29403.142</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(SolutionDir)..\..\..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\base\basictypes.h" />
+    <ClInclude Include="..\base\logging.h" />
+    <ClInclude Include="..\base\scoped_ptr.h" />
+    <ClInclude Include="..\base\string16.h" />
+    <ClInclude Include="..\base\unicode\alphaindex.h" />
+    <ClInclude Include="..\base\unicode\appendable.h" />
+    <ClInclude Include="..\base\unicode\basictz.h" />
+    <ClInclude Include="..\base\unicode\brkiter.h" />
+    <ClInclude Include="..\base\unicode\bytestream.h" />
+    <ClInclude Include="..\base\unicode\bytestrie.h" />
+    <ClInclude Include="..\base\unicode\bytestriebuilder.h" />
+    <ClInclude Include="..\base\unicode\calendar.h" />
+    <ClInclude Include="..\base\unicode\caniter.h" />
+    <ClInclude Include="..\base\unicode\casemap.h" />
+    <ClInclude Include="..\base\unicode\char16ptr.h" />
+    <ClInclude Include="..\base\unicode\chariter.h" />
+    <ClInclude Include="..\base\unicode\choicfmt.h" />
+    <ClInclude Include="..\base\unicode\coleitr.h" />
+    <ClInclude Include="..\base\unicode\coll.h" />
+    <ClInclude Include="..\base\unicode\compactdecimalformat.h" />
+    <ClInclude Include="..\base\unicode\curramt.h" />
+    <ClInclude Include="..\base\unicode\currpinf.h" />
+    <ClInclude Include="..\base\unicode\currunit.h" />
+    <ClInclude Include="..\base\unicode\datefmt.h" />
+    <ClInclude Include="..\base\unicode\dbbi.h" />
+    <ClInclude Include="..\base\unicode\dcfmtsym.h" />
+    <ClInclude Include="..\base\unicode\decimfmt.h" />
+    <ClInclude Include="..\base\unicode\docmain.h" />
+    <ClInclude Include="..\base\unicode\dtfmtsym.h" />
+    <ClInclude Include="..\base\unicode\dtintrv.h" />
+    <ClInclude Include="..\base\unicode\dtitvfmt.h" />
+    <ClInclude Include="..\base\unicode\dtitvinf.h" />
+    <ClInclude Include="..\base\unicode\dtptngen.h" />
+    <ClInclude Include="..\base\unicode\dtrule.h" />
+    <ClInclude Include="..\base\unicode\edits.h" />
+    <ClInclude Include="..\base\unicode\enumset.h" />
+    <ClInclude Include="..\base\unicode\errorcode.h" />
+    <ClInclude Include="..\base\unicode\fieldpos.h" />
+    <ClInclude Include="..\base\unicode\filteredbrk.h" />
+    <ClInclude Include="..\base\unicode\fmtable.h" />
+    <ClInclude Include="..\base\unicode\format.h" />
+    <ClInclude Include="..\base\unicode\formattedvalue.h" />
+    <ClInclude Include="..\base\unicode\fpositer.h" />
+    <ClInclude Include="..\base\unicode\gender.h" />
+    <ClInclude Include="..\base\unicode\gregocal.h" />
+    <ClInclude Include="..\base\unicode\icudataver.h" />
+    <ClInclude Include="..\base\unicode\icuplug.h" />
+    <ClInclude Include="..\base\unicode\idna.h" />
+    <ClInclude Include="..\base\unicode\listformatter.h" />
+    <ClInclude Include="..\base\unicode\localebuilder.h" />
+    <ClInclude Include="..\base\unicode\localematcher.h" />
+    <ClInclude Include="..\base\unicode\localpointer.h" />
+    <ClInclude Include="..\base\unicode\locdspnm.h" />
+    <ClInclude Include="..\base\unicode\locid.h" />
+    <ClInclude Include="..\base\unicode\measfmt.h" />
+    <ClInclude Include="..\base\unicode\measunit.h" />
+    <ClInclude Include="..\base\unicode\measure.h" />
+    <ClInclude Include="..\base\unicode\messagepattern.h" />
+    <ClInclude Include="..\base\unicode\msgfmt.h" />
+    <ClInclude Include="..\base\unicode\normalizer2.h" />
+    <ClInclude Include="..\base\unicode\normlzr.h" />
+    <ClInclude Include="..\base\unicode\nounit.h" />
+    <ClInclude Include="..\base\unicode\numberformatter.h" />
+    <ClInclude Include="..\base\unicode\numberrangeformatter.h" />
+    <ClInclude Include="..\base\unicode\numfmt.h" />
+    <ClInclude Include="..\base\unicode\numsys.h" />
+    <ClInclude Include="..\base\unicode\parseerr.h" />
+    <ClInclude Include="..\base\unicode\parsepos.h" />
+    <ClInclude Include="..\base\unicode\platform.h" />
+    <ClInclude Include="..\base\unicode\plurfmt.h" />
+    <ClInclude Include="..\base\unicode\plurrule.h" />
+    <ClInclude Include="..\base\unicode\ptypes.h" />
+    <ClInclude Include="..\base\unicode\putil.h" />
+    <ClInclude Include="..\base\unicode\rbbi.h" />
+    <ClInclude Include="..\base\unicode\rbnf.h" />
+    <ClInclude Include="..\base\unicode\rbtz.h" />
+    <ClInclude Include="..\base\unicode\regex.h" />
+    <ClInclude Include="..\base\unicode\region.h" />
+    <ClInclude Include="..\base\unicode\reldatefmt.h" />
+    <ClInclude Include="..\base\unicode\rep.h" />
+    <ClInclude Include="..\base\unicode\resbund.h" />
+    <ClInclude Include="..\base\unicode\schriter.h" />
+    <ClInclude Include="..\base\unicode\scientificnumberformatter.h" />
+    <ClInclude Include="..\base\unicode\search.h" />
+    <ClInclude Include="..\base\unicode\selfmt.h" />
+    <ClInclude Include="..\base\unicode\simpleformatter.h" />
+    <ClInclude Include="..\base\unicode\simpletz.h" />
+    <ClInclude Include="..\base\unicode\smpdtfmt.h" />
+    <ClInclude Include="..\base\unicode\sortkey.h" />
+    <ClInclude Include="..\base\unicode\std_string.h" />
+    <ClInclude Include="..\base\unicode\strenum.h" />
+    <ClInclude Include="..\base\unicode\stringoptions.h" />
+    <ClInclude Include="..\base\unicode\stringpiece.h" />
+    <ClInclude Include="..\base\unicode\stringtriebuilder.h" />
+    <ClInclude Include="..\base\unicode\stsearch.h" />
+    <ClInclude Include="..\base\unicode\symtable.h" />
+    <ClInclude Include="..\base\unicode\tblcoll.h" />
+    <ClInclude Include="..\base\unicode\timezone.h" />
+    <ClInclude Include="..\base\unicode\tmunit.h" />
+    <ClInclude Include="..\base\unicode\tmutamt.h" />
+    <ClInclude Include="..\base\unicode\tmutfmt.h" />
+    <ClInclude Include="..\base\unicode\translit.h" />
+    <ClInclude Include="..\base\unicode\tzfmt.h" />
+    <ClInclude Include="..\base\unicode\tznames.h" />
+    <ClInclude Include="..\base\unicode\tzrule.h" />
+    <ClInclude Include="..\base\unicode\tztrans.h" />
+    <ClInclude Include="..\base\unicode\ubidi.h" />
+    <ClInclude Include="..\base\unicode\ubiditransform.h" />
+    <ClInclude Include="..\base\unicode\ubrk.h" />
+    <ClInclude Include="..\base\unicode\ucal.h" />
+    <ClInclude Include="..\base\unicode\ucasemap.h" />
+    <ClInclude Include="..\base\unicode\ucat.h" />
+    <ClInclude Include="..\base\unicode\uchar.h" />
+    <ClInclude Include="..\base\unicode\ucharstrie.h" />
+    <ClInclude Include="..\base\unicode\ucharstriebuilder.h" />
+    <ClInclude Include="..\base\unicode\uchriter.h" />
+    <ClInclude Include="..\base\unicode\uclean.h" />
+    <ClInclude Include="..\base\unicode\ucnv.h" />
+    <ClInclude Include="..\base\unicode\ucnvsel.h" />
+    <ClInclude Include="..\base\unicode\ucnv_cb.h" />
+    <ClInclude Include="..\base\unicode\ucnv_err.h" />
+    <ClInclude Include="..\base\unicode\ucol.h" />
+    <ClInclude Include="..\base\unicode\ucoleitr.h" />
+    <ClInclude Include="..\base\unicode\uconfig.h" />
+    <ClInclude Include="..\base\unicode\ucpmap.h" />
+    <ClInclude Include="..\base\unicode\ucptrie.h" />
+    <ClInclude Include="..\base\unicode\ucsdet.h" />
+    <ClInclude Include="..\base\unicode\ucurr.h" />
+    <ClInclude Include="..\base\unicode\udat.h" />
+    <ClInclude Include="..\base\unicode\udata.h" />
+    <ClInclude Include="..\base\unicode\udateintervalformat.h" />
+    <ClInclude Include="..\base\unicode\udatpg.h" />
+    <ClInclude Include="..\base\unicode\udisplaycontext.h" />
+    <ClInclude Include="..\base\unicode\uenum.h" />
+    <ClInclude Include="..\base\unicode\ufieldpositer.h" />
+    <ClInclude Include="..\base\unicode\uformattable.h" />
+    <ClInclude Include="..\base\unicode\uformattedvalue.h" />
+    <ClInclude Include="..\base\unicode\ugender.h" />
+    <ClInclude Include="..\base\unicode\uidna.h" />
+    <ClInclude Include="..\base\unicode\uiter.h" />
+    <ClInclude Include="..\base\unicode\uldnames.h" />
+    <ClInclude Include="..\base\unicode\ulistformatter.h" />
+    <ClInclude Include="..\base\unicode\uloc.h" />
+    <ClInclude Include="..\base\unicode\ulocdata.h" />
+    <ClInclude Include="..\base\unicode\umachine.h" />
+    <ClInclude Include="..\base\unicode\umisc.h" />
+    <ClInclude Include="..\base\unicode\umsg.h" />
+    <ClInclude Include="..\base\unicode\umutablecptrie.h" />
+    <ClInclude Include="..\base\unicode\unifilt.h" />
+    <ClInclude Include="..\base\unicode\unifunct.h" />
+    <ClInclude Include="..\base\unicode\unimatch.h" />
+    <ClInclude Include="..\base\unicode\unirepl.h" />
+    <ClInclude Include="..\base\unicode\uniset.h" />
+    <ClInclude Include="..\base\unicode\unistr.h" />
+    <ClInclude Include="..\base\unicode\unorm.h" />
+    <ClInclude Include="..\base\unicode\unorm2.h" />
+    <ClInclude Include="..\base\unicode\unum.h" />
+    <ClInclude Include="..\base\unicode\unumberformatter.h" />
+    <ClInclude Include="..\base\unicode\unumsys.h" />
+    <ClInclude Include="..\base\unicode\uobject.h" />
+    <ClInclude Include="..\base\unicode\upluralrules.h" />
+    <ClInclude Include="..\base\unicode\uregex.h" />
+    <ClInclude Include="..\base\unicode\uregion.h" />
+    <ClInclude Include="..\base\unicode\ureldatefmt.h" />
+    <ClInclude Include="..\base\unicode\urename.h" />
+    <ClInclude Include="..\base\unicode\urep.h" />
+    <ClInclude Include="..\base\unicode\ures.h" />
+    <ClInclude Include="..\base\unicode\uscript.h" />
+    <ClInclude Include="..\base\unicode\usearch.h" />
+    <ClInclude Include="..\base\unicode\uset.h" />
+    <ClInclude Include="..\base\unicode\usetiter.h" />
+    <ClInclude Include="..\base\unicode\ushape.h" />
+    <ClInclude Include="..\base\unicode\uspoof.h" />
+    <ClInclude Include="..\base\unicode\usprep.h" />
+    <ClInclude Include="..\base\unicode\ustdio.h" />
+    <ClInclude Include="..\base\unicode\ustream.h" />
+    <ClInclude Include="..\base\unicode\ustring.h" />
+    <ClInclude Include="..\base\unicode\ustringtrie.h" />
+    <ClInclude Include="..\base\unicode\utext.h" />
+    <ClInclude Include="..\base\unicode\utf.h" />
+    <ClInclude Include="..\base\unicode\utf16.h" />
+    <ClInclude Include="..\base\unicode\utf32.h" />
+    <ClInclude Include="..\base\unicode\utf8.h" />
+    <ClInclude Include="..\base\unicode\utf_old.h" />
+    <ClInclude Include="..\base\unicode\utmscale.h" />
+    <ClInclude Include="..\base\unicode\utrace.h" />
+    <ClInclude Include="..\base\unicode\utrans.h" />
+    <ClInclude Include="..\base\unicode\utypes.h" />
+    <ClInclude Include="..\base\unicode\uvernum.h" />
+    <ClInclude Include="..\base\unicode\uversion.h" />
+    <ClInclude Include="..\base\unicode\vtzone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\base\logging.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\base\README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

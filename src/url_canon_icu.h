@@ -49,7 +49,7 @@ class ICUCharsetConverter : public CharsetConverter {
 
   GURL_API virtual ~ICUCharsetConverter();
 
-  GURL_API virtual void ConvertFromUTF16(const char16* input,
+  GURL_API virtual void ConvertFromUTF16(const UChar* input,
                                          int input_len,
                                          CanonOutput* output);
 
